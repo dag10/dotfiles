@@ -1,0 +1,3 @@
+[submodule "vim/drew-vimrc"]
+	path = vim/drew-vimrc
+	url = git@github.com:dag10/drew-vimrc.git
