@@ -17,16 +17,11 @@ For more information about dotfiles, I wrote these articles on my blog:
 3. Clone this repository
 
   ```
-  git clone git@github.com:rkalis/dotfiles.git
+  git clone git@github.com:dag10/dotfiles.git
   ```
 4. Run the `bootstrap.sh` script
     1. Alternatively, only run the `setup.sh` scripts in specific subfolders if you don't need everything
-5. (Optional) Install missing applications from the internet
-  * [Popcorn Time](https://popcorntime.sh/)
-  * [Pyxel Edit](http://pyxeledit.com/)
-  * [UvAVPN](http://student.uva.nl/en/content/az/uvavpn/download/download-uvavpn-software.html)
-6. (Optional) Point the Alfred preference sync to the right folder
-7. (Optional) Point the Microsoft Remote Desktop folder to the right folder
+5. Point the iTerm preference sync to the right folder
 
 ## Customisation
 I strongly encourage you to play around with the configurations, and add or remove features.
