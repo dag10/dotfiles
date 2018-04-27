@@ -1,3 +1,6 @@
 [submodule "vim/drew-vimrc"]
 	path = vim/drew-vimrc
 	url = git@github.com:dag10/drew-vimrc.git
+[submodule "fonts/powerline-fonts"]
+	path = fonts/powerline-fonts
+	url = https://github.com/supermarin/powerline-fonts
