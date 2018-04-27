@@ -33,6 +33,7 @@ brew 'ssh-copy-id'
 brew 'wget'
 brew 'valgrind'
 
+cask 'caffeine'
 cask 'google-chrome'
 cask 'google-drive'
 cask 'iterm2'
