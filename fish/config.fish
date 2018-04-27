@@ -1,20 +1,38 @@
-set -x -g LS_COLORS "di=38;5;27:fi=38;5;7:ln=38;5;51:pi=40;38;5;11:so=38;5;13:or=38;5;197:mi=38;5;161:ex=38;5;9:"
+# Path to Oh My Fish install.
+set -gx OMF_PATH "/Users/drew/.local/share/omf"
 
-set -x -g TERM "xterm-256color"
+# Customize Oh My Fish configuration path.
+#set -gx OMF_CONFIG "/Users/drew/.config/omf"
 
-# Coreutils bin and man folders
-set -x -g PATH (brew --prefix coreutils)/libexec/gnubin $PATH
-# set -x -g MANPATH (brew --prefix coreutils)/libexec/gnuman $MANPATH
+# Load oh-my-fish configuration.
+source $OMF_PATH/init.fish
 
-# Findutils bin and man folders
-set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
-# set -x -g MANPATH (brew --prefix findutils)/libexec/gnuman $MANPATH
+# Theme settings
+set -g theme_color_scheme base16
 
-# User bin folder
-set -x -g PATH /usr/local/miniconda3/bin ~/bin $PATH /usr/local/sbin
+# Aliases
+alias composer "php ~/software/composer/composer.phar"
+alias tmuxn "tmux -2 new-session -s"
+alias tmuxa "tmux -2 attach-session -t"
+alias rg "npm run gulp"
+alias rt "npm run tslint"
+alias rc "npm run gulp css"
+alias rl rc
+alias rtpl "npm run gulp templates"
 
-# Composer
-set -x -g PATH ~/.composer/vendor/bin $PATH
+# Paths
+set PATH ~/Library/Android/sdk/platform-tools $PATH
+set PATH /usr/local/bin $PATH
+set PATH /Applications/Argyll_V2.0.0/bin $PATH
 
-# Source conda.fish
-source /usr/local/miniconda3/etc/fish/conf.d/conda.fish
+# For Data Management class
+function pastepopulate
+  pbpaste | sshpass -p "fire5purple5Lion" ssh p320-02d@reddwarf.cs.rit.edu 'cat > ~/Data_Management_Project/populate.sql'
+end
+function copypopulate
+  sshpass -p "fire5purple5Lion" scp -r p320-02d@reddwarf.cs.rit.edu:~/Data_Management_Project/populate.sql /dev/stdout | pbcopy
+end
+function definitions
+  sshpass -p "fire5purple5Lion" scp -r p320-02d@reddwarf.cs.rit.edu:~/Data_Management_Project/create_tables.sql /dev/stdout
+end
+
