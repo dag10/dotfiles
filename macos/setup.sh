@@ -13,6 +13,14 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
+# System
+###############################################################################
+
+# Disable guest account on login screen
+sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
+
+###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
 
