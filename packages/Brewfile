@@ -35,6 +35,8 @@ cask 'java'
 cask 'p4merge'
 cask 'slack'
 cask 'spotify'
+cask 'unity'
+cask 'unity-monodevelop'
 cask 'visual-studio-code'
 cask 'vlc'
 
