@@ -50,6 +50,8 @@ set_fish_shell() {
     fi
 }
 
+touch ~/.hushlogin
+
 if set_fish_shell; then
     success "Successfully set up fish shell."
 else
