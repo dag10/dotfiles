@@ -10,7 +10,7 @@ COMMENT=\#*
 sudo -v
 
 info "Installing Brewfile packages..."
-brew bundle
+brew bundle -v
 success "Finished installing Brewfile packages."
 
 find * -name "*.list" | while read fn; do
