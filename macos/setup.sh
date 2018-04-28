@@ -25,7 +25,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 ###############################################################################
 
 # Enable dark mode
-defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark
+sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark
 
 # Set computer name (as done via System Preferences → Sharing)
 #sudo scutil --set ComputerName "0x6D746873"
@@ -249,7 +249,7 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 

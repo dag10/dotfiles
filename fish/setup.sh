@@ -5,13 +5,20 @@ cd "$DIR"
 
 . ../scripts/functions.sh
 
+mkdir -p "$HOME/.config/fish"
+
 SOURCE="$(realpath .)"
 DESTINATION="$(realpath ~/.config/fish)"
 
 info "Setting up fish shell..."
 
+substep_info "Installing bobthefish"
+fish installomf --path=~/.local/share/omf --config=~/.config/omf --noninteractive
+fish -c "omf install bobthefish"
+
 substep_info "Creating fish config folders..."
 mkdir -p "$DESTINATION/functions"
+mkdir -p "$DESTINATION/functions/theme-bobthefish"
 mkdir -p "$DESTINATION/completions"
 
 find * -name "*.fish" | while read fn; do
@@ -34,14 +41,12 @@ set_fish_shell() {
             fi
         fi
         substep_info "Changing shell to fish"
-        if sudo chsh -s /usr/local/bin/fish; then
+        if chsh -s /usr/local/bin/fish; then
             substep_success "Changed shell to fish"
         else
             substep_error "Failed changing shell to fish"
             return 2
         fi
-        substep_info "Running fish initial setup"
-        fish -c "setup"
     fi
 }
 
