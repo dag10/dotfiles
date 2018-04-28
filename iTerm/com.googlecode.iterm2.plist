@@ -31357,6 +31357,8 @@
 	<integer>2</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>LoadsPrefsFromCustomFolder</key>
+	<true/>
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
@@ -31399,7 +31401,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>234 113 918 452 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>74 115 780 587 0 0 1280 778 </string>
+	<string>138 110 780 587 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>152 50 570 377 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -32210,7 +32212,7 @@
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
-	<true/>
+	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
 	<key>RightCommand</key>
