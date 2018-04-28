@@ -18,7 +18,6 @@ brew 'findutils', args: ['with-default-names']
 brew 'fish'
 brew 'gdb'
 brew 'git'
-brew 'glfw3'
 brew 'mas'
 brew 'mysql'
 brew 'node'
