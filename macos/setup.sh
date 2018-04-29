@@ -24,9 +24,6 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 # General UI/UX                                                               #
 ###############################################################################
 
-# Enable dark mode
-sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark
-
 # Set computer name (as done via System Preferences → Sharing)
 #sudo scutil --set ComputerName "0x6D746873"
 #sudo scutil --set HostName "0x6D746873"
@@ -40,7 +37,7 @@ sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme 
 sudo nvram SystemAudioVolume=" "
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
-#defaults write com.apple.universalaccess reduceTransparency -bool true
+defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Set highlight color to green
 #defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
