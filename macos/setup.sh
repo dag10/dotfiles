@@ -678,8 +678,9 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Set iTerm preferences folder
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "${HOME}/dotfiles/iTerm"
-defaults write com.googlecode.iterm2 LoadsPrefsFromCustomFolder -bool true
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/dotfiles/iTerm"
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile_selection -bool false
 
 ###############################################################################
 # Time Machine                                                                #
@@ -936,6 +937,7 @@ for app in "Activity Monitor" \
     "Transmission" \
     "Tweetbot" \
     "Twitter" \
+    "iTerm2" \
     "iCal"; do
     killall "${app}" &> /dev/null
 done
