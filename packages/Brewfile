@@ -29,7 +29,6 @@ brew 'wget'
 brew 'valgrind'
 brew 'vim'
 
-cask 'caffeine'
 cask 'google-backup-and-sync'
 cask 'iterm2'
 cask 'java'
@@ -43,3 +42,4 @@ cask 'vlc'
 
 mas '1Password', id: 443987910
 mas 'Xcode', id: 497799835
+mas 'Amphetamine', id: 937984704
