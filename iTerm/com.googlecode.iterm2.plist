@@ -31399,11 +31399,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>0 37 1280 629 0 0 1280 800 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>234 113 918 452 0 0 1280 778 </string>
+	<string>172 179 928 394 0 0 1152 720 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>138 110 780 587 0 0 1280 778 </string>
+	<string>171 66 780 587 0 0 1152 698 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>152 50 570 377 0 0 1280 778 </string>
+	<string>152 4 780 587 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -31566,13 +31566,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.079803466796875</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.069258241977188148</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.046488295774906874</real>
+				<real>0.0</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
