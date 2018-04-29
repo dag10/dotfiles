@@ -27,6 +27,7 @@ brew 'trash'
 brew 'sl'
 brew 'wget'
 brew 'valgrind'
+brew 'vim'
 
 cask 'caffeine'
 cask 'google-backup-and-sync'
