@@ -42,7 +42,15 @@ cask 'unity'
 cask 'unity-monodevelop'
 cask 'visual-studio-code'
 cask 'vlc'
+cask 'zoomus'
+cask 'microsoft-teams'
+cask 'adobe-creative-cloud'
+cask 'figma'
+cask 'discord'
 
 mas '1Password', id: 443987910
 mas 'Xcode', id: 497799835
 mas 'Amphetamine', id: 937984704
+mas 'Slack', id: 803453959
+mas 'Sentry Viewer', id: 1485943859
+mas 'Messenger', id: 1480068668
