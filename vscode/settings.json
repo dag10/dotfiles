@@ -19,7 +19,7 @@
   "perforce.deleteOnFileDelete": true,
   "perforce.activationMode": "always",
   "window.titleBarStyle": "custom",
-  "window.menuBarVisibility": "visible",
+  "window.menuBarVisibility": "hidden",
   "breadcrumbs.enabled": true,
   "workbench.startupEditor": "none",
   "workbench.tree.horizontalScrolling": true,
