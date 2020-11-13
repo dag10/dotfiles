@@ -25,6 +25,7 @@ dockutil --no-restart --add "/Applications/Discord.app"
 dockutil --no-restart --add "/Applications/Microsoft Teams.app"
 dockutil --no-restart --add "/Applications/Slack.app"
 dockutil --no-restart --add "/Applications/zoom.us.app"
+dockutil --no-restart --add "/Applications/Shearwater Cloud.app"
 dockutil --no-restart --add "/Users/drew/Downloads"
 
 killall Dock
