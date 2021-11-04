@@ -4,6 +4,6 @@
 	name = Drew Gottlieb
 	email = gottlieb.drew@gmail.com
 [core]
-	editor = /usr/local/bin/vim
+	editor = vim
 [url "https://"]
 	insteadOf = git://

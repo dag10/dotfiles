@@ -10,9 +10,9 @@ info "Configuring dock..."
 brew install dockutil
 
 dockutil --no-restart --remove all
+dockutil --no-restart --add "/Applications/1Password 7.app"
 #dockutil --no-restart --add "/System/Applications/Safari.app"
 dockutil --no-restart --add "/Applications/Google Chrome.app"
-dockutil --no-restart --add "/Applications/1Password.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
 #dockutil --no-restart --add "/System/Applications/Calendar.app"
 dockutil --no-restart --add "/System/Applications/Reminders.app"
