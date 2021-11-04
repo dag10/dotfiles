@@ -57,6 +57,7 @@ cask 'adobe-creative-cloud'
 cask 'figma'
 cask 'discord'
 cask './casks/shearwater-cloud.rb'
+cask './casks/topnotch.rb'
 cask 'visual-studio-code'
 
 mas '1Password', id: 443987910
