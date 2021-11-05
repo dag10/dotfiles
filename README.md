@@ -7,12 +7,15 @@
 3. Install Homebrew and git
 
   ```bash
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew install git
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'export PATH=/opt/homebrew/bin:$PATH' >> ~/.profile
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.profile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
   ```
 4. Clone this repository
 
   ```
+  brew install git
   git clone git@github.com:dag10/dotfiles.git
   ```
 5. Run the `bootstrap.sh` script
