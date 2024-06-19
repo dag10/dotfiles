@@ -863,8 +863,8 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
   # Save the last status for later (do this before the `set` calls below)
   set -l last_status $status
 
-  __bobthefish_glyphs
-  __bobthefish_colors $theme_color_scheme
+#  __bobthefish_glyphs
+#  __bobthefish_colors $theme_color_scheme
   type -q bobthefish_colors
     and bobthefish_colors
 
