@@ -7,6 +7,3 @@
 [submodule "fish/oh-my-fish"]
 	path = fish/oh-my-fish
 	url = https://github.com/oh-my-fish/oh-my-fish
-[submodule "tmux/tmux-sensible"]
-	path = tmux/tmux-sensible
-	url = https://github.com/tmux-plugins/tmux-sensible
