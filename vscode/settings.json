@@ -44,5 +44,6 @@
     "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.localEchoStyle": "#00ff00",
     "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font Mono",
-    "editor.minimap.size": "fit"
+    "editor.minimap.size": "fit",
+    "git-graph.dialog.rebase.launchInteractiveRebase": true
 }
