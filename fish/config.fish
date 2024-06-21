@@ -17,9 +17,8 @@ alias rl rc
 alias rtpl "npm run gulp templates"
 
 # Paths
-#set PATH ~/Library/Android/sdk/platform-tools $PATH
-set PATH /usr/local/bin $PATH
-#set PATH /Applications/Argyll_V2.0.0/bin $PATH
+fish_add_path /usr/local/bin
+fish_add_path /opt/homebrew/bin
 
 # Disable greeting
 function fish_greeting

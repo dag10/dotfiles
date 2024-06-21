@@ -3,6 +3,10 @@
 DIR=$(dirname "$0")
 cd "$DIR"
 
+# This is redundant as fish will already be installed from the Brewfile.
+# Still useful if I run this setup script on its own.
+brew install fish
+
 . ../scripts/functions.sh
 
 mkdir -p "$HOME/.config/fish"
@@ -24,7 +28,7 @@ mkdir -p "$DESTINATION/functions"
 mkdir -p "$DESTINATION/functions/theme-bobthefish"
 mkdir -p "$DESTINATION/completions"
 
-find * -name "*.fish" | while read fn; do
+find . -name "*.fish" -not -path "./oh-my-fish/*" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 
