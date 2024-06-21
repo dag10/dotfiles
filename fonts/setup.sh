@@ -10,5 +10,6 @@ info "Configuraing fonts..."
 git submodule update --init
 cp powerline-fonts/Meslo/* /Library/Fonts/
 cp powerline-fonts/Menlo/* /Library/Fonts/
+cp Meslo_M-DZ_Nerd/*/* /Library/Fonts/
 
 success "Finished configuring fonts."
