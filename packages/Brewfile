@@ -37,6 +37,7 @@ brew 'wget'
 #brew 'valgrind'
 brew 'vim'
 brew 'defaultbrowser'
+brew 'fzf'
 
 cask 'avibrazil-rdm'
 cask 'google-chrome'

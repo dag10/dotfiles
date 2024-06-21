@@ -6,6 +6,9 @@ set -g theme_show_exit_status yes
 # Theme settings
 set -g theme_color_scheme base16
 
+# Brew
+set -g HOMEBREW_NO_INSTALL_CLEANUP TRUE
+
 # Aliases
 #alias composer "php ~/software/composer/composer.phar"
 alias tmuxn "tmux -2 new-session -s"
@@ -23,3 +26,18 @@ fish_add_path /opt/homebrew/bin
 # Disable greeting
 function fish_greeting
 end
+
+function check_and_attach_or_create_tmux
+    set -l detached_sessions (tmux ls | grep -v -E '(attached)' | cut -d: -f1)
+    if set -q detached_sessions[1]
+        tmux attach-session -t $detached_sessions[1]
+    else
+        exec tmux new-session
+    end
+end
+
+# Run TMUX if we aren't already in it
+if status is-interactive; and not set -q TMUX
+  #check_and_attach_or_create_tmux
+end
+
