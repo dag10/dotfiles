@@ -8,8 +8,10 @@ cd "$DIR"
 SOURCE="$(realpath .)"
 DESTINATION="$(realpath ~)"
 
-info "Configuraing tmux..."
+info "Downloading sensible-tmux..."
+git submodule update --init
 
+info "Configuring tmux..."
 find . -name ".tmux*" | while read fn; do
     fn=$(basename $fn)
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
