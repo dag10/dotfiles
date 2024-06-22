@@ -20,6 +20,12 @@ alias rtpl "npm run gulp templates"
 fish_add_path /usr/local/bin
 fish_add_path /opt/homebrew/bin
 
+# Integrate fzf
+# Ctrl+T opens fzf to insert a path in the current prompt
+# Alt+C CDs to a fzf directory
+# Ctrl+R opens fzf to search command history
+fzf --fish | source
+
 # Disable greeting
 function fish_greeting
 end

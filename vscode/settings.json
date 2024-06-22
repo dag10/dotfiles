@@ -45,5 +45,12 @@
     "terminal.integrated.localEchoStyle": "#00ff00",
     "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font Mono",
     "editor.minimap.size": "fit",
-    "git-graph.dialog.rebase.launchInteractiveRebase": true
+    "git-graph.dialog.rebase.launchInteractiveRebase": true,
+    "git.confirmSync": false,
+    "[cpp]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
+    "terminal.integrated.macOptionIsMeta": true
 }
