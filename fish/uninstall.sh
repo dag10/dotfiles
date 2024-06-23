@@ -33,6 +33,9 @@ trash -v ~/.local/share/omf
 trash -v ~/.config/omf
 trash -v ~/.config/fish*
 
+echo "Removing iTerm2 script..."
+trash -F ./iterm2_shell_integration.fish || echo "Already deleted."
+
 if grep -q '/opt/homebrew/bin/fish' /etc/shells; then
   echo "Removing fish from /etc/shells..."
   sudo sed -i.bak '/\/opt\/homebrew\/bin\/fish/d' /etc/shells

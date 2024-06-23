@@ -21,6 +21,9 @@ fish_add_path /usr/local/bin
 fish_add_path /opt/homebrew/bin
 fish_add_path ~/.local/bin
 
+# Integrate iTerm2
+source ~/.config/fish/iterm2_shell_integration.fish
+
 # Integrate fzf
 # Ctrl+T opens fzf to insert a path in the current prompt
 # Alt+C CDs to a fzf directory

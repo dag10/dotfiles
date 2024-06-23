@@ -23,6 +23,9 @@ oh-my-fish/bin/install --offline --path=~/.local/share/omf --config=~/.config/om
 substep_info "Installing bobthefish"
 fish -c "omf install bobthefish"
 
+info "Downloading iTerm2 integration script"
+curl -L https://iterm2.com/shell_integration/fish -o "$SOURCE/iterm2_shell_integration.fish"
+
 substep_info "Creating fish config folders..."
 mkdir -p "$DESTINATION/functions"
 mkdir -p "$DESTINATION/functions/theme-bobthefish"
