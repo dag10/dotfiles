@@ -53,5 +53,6 @@
         "editor.semanticHighlighting.enabled": true
     },
     "terminal.integrated.macOptionIsMeta": true,
-    "window.autoDetectColorScheme": true
+    "window.autoDetectColorScheme": true,
+    "git.enableSmartCommit": true,
 }
