@@ -3,9 +3,11 @@
 DIR=$(dirname "$0")
 cd "$DIR"
 
-# This is redundant as fish will already be installed from the Brewfile.
-# Still useful if I run this setup script on its own.
+# Some minimal prereq packages that are largely redundant with those in
+# the Brewfile. Still useful if I run this setup script on its own.
+brew install trash
 brew install fish
+brew install fzf
 
 . ../scripts/functions.sh
 
