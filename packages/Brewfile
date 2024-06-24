@@ -59,6 +59,7 @@ cask './casks/shearwater-cloud.rb'
 cask './casks/topnotch.rb'
 cask 'visual-studio-code'
 cask '1password'
+cask 'rocket'
 
 mas 'Xcode', id: 497799835
 mas 'Amphetamine', id: 937984704
