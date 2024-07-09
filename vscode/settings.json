@@ -2,7 +2,6 @@
     "editor.rulers": [79],
     "editor.minimap.enabled": true,
     "workbench.iconTheme": "vscode-icons",
-    "editor.minimap.renderCharacters": false,
     "editor.lineNumbers": "relative",
     "editor.renderWhitespace": "all",
     "[typescript]": {
@@ -44,7 +43,6 @@
     "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.localEchoStyle": "#00ff00",
     "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font Mono",
-    "editor.minimap.size": "fit",
     "git-graph.dialog.rebase.launchInteractiveRebase": true,
     "git.confirmSync": false,
     "[cpp]": {
@@ -55,4 +53,9 @@
     "terminal.integrated.macOptionIsMeta": true,
     "window.autoDetectColorScheme": true,
     "git.enableSmartCommit": true,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.size": "fit",
+    "editor.minimap.renderCharacters": false,
+    "editor.scrollbar.vertical": "hidden",
+    "scm.experimental.showHistoryGraph": true,
 }
