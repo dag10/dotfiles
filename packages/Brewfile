@@ -60,6 +60,7 @@ cask './casks/topnotch.rb'
 cask 'visual-studio-code'
 cask '1password'
 cask 'rocket'
+cask 'imhex'
 
 mas 'Xcode', id: 497799835
 mas 'Amphetamine', id: 937984704
