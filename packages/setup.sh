@@ -9,6 +9,13 @@ COMMENT=\#*
 
 sudo -v
 
+info "Installing MAS"
+brew install mas
+
+info "Installing Xcode"
+mas install 497799835
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
 info "Installing Brewfile packages..."
 brew bundle -v
 success "Finished installing Brewfile packages."
