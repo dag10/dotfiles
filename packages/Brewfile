@@ -1,5 +1,8 @@
 cask_args appdir: '/Applications'
 
+brew 'mas'
+mas 'Xcode', id: 497799835
+
 tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
@@ -24,8 +27,7 @@ brew 'clang-format'
 brew 'duti'
 brew 'gdb'
 brew 'git'
-brew 'mas'
-brew 'mysql'
+#brew 'mysql'
 brew 'node'
 brew 'openssl'
 brew 'tig'
@@ -47,30 +49,28 @@ cask 'iterm2'
 #cask 'p4merge'
 #cask 'slack'
 cask 'spotify'
-cask 'steam'
-#cask 'unity'
+#cask 'steam' #cask 'unity'
 #cask 'unity-monodevelop'
 cask 'vlc'
 cask 'zoom'
 #cask 'microsoft-teams'
-cask 'adobe-creative-cloud'
+#cask 'adobe-creative-cloud'
 #cask 'figma'
-cask 'discord'
+#cask 'discord'
 cask './casks/shearwater-cloud.rb'
 cask './casks/topnotch.rb'
 cask 'visual-studio-code'
 cask '1password'
 cask 'rocket'
 cask 'imhex'
-cask 'rekordbox'
+#cask 'rekordbox'
 
-mas 'Xcode', id: 497799835
 mas 'Amphetamine', id: 937984704
 mas 'Slack', id: 803453959
 #mas 'Sentry Viewer', id: 1485943859
 mas 'Messenger', id: 1480068668
 mas 'Microsoft Remote Desktop', id: 1295203466
-mas 'Telegram', id: 747648890
+#mas 'Telegram', id: 747648890
 mas 'Save to Raindrop.io', id: 1549370672
 mas '1Blocker', id: 1365531024
 mas 'Microsoft OneNote', id: 784801555
