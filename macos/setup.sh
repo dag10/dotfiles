@@ -37,7 +37,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 sudo nvram SystemAudioVolume=" "
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
-defaults write com.apple.universalaccess reduceTransparency -bool true
+sudo defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Set highlight color to green
 #defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
@@ -103,6 +103,9 @@ defaults write com.apple.helpviewer DevMode -bool true
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+# Add "if found..." text to the login screen.
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found, contact gottlieb.drew@gmail.com"
 
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
@@ -174,12 +177,12 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+sudo defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+sudo defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Turn off image smoothing
-defaults write com.apple.universalaccess closeViewSmoothImages -bool false
+sudo defaults write com.apple.universalaccess closeViewSmoothImages -bool false
 # Follow the keyboard focus while zoomed in
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+sudo defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
@@ -218,6 +221,9 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
+
+# Disable "click desktop to hide all windows"
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
 # Disable shadow in screenshots
 #defaults write com.apple.screencapture disable-shadow -bool true
@@ -348,6 +354,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
+# Display dock on right.
+defaults write com.apple.dock orientation -string right
+
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
@@ -446,7 +455,8 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 ###############################################################################
 
 # Set default browser.
-defaultbrowser chrome
+#defaultbrowser arc
+/Applications/Arc.app/Contents/MacOS/Arc --make-default-browser
 
 # Privacy: don’t send search queries to Apple
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
