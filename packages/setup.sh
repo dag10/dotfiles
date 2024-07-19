@@ -13,6 +13,9 @@ info "Installing Brewfile packages..."
 brew bundle -v
 success "Finished installing Brewfile packages."
 
+info "Installing Rosetta 2"
+softwareupdate --install-rosetta --agree-to-license
+
 find * -name "*.list" | while read fn; do
     cmd="${fn%.*}"
     set -- $cmd
