@@ -39,7 +39,6 @@
         "vscode-kubernetes.minikube-path-mac": "/Users/drew/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
         "vscode-kubernetes.kubectl-path-mac": "/Users/drew/.vs-kubernetes/tools/kubectl/kubectl"
     },
-    "workbench.startupEditor": "readme",
     "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.localEchoStyle": "#00ff00",
     "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font Mono",
@@ -58,4 +57,6 @@
     "editor.minimap.renderCharacters": false,
     "editor.scrollbar.vertical": "hidden",
     "scm.experimental.showHistoryGraph": true,
+    "workbench.startupEditor": "none",
+    "cmake.configureOnOpen": true,
 }
