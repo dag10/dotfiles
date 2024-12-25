@@ -51,6 +51,9 @@ source ~/.config/fish/iterm2_shell_integration.fish
 # Ctrl+R opens fzf to search command history
 fzf --fish | source
 
+# Integrate pyenv
+pyenv init - fish | source
+
 # Disable greeting
 function fish_greeting
 end

@@ -14,7 +14,7 @@ brew install fzf
 mkdir -p "$HOME/.config/fish"
 
 SOURCE="$(realpath .)"
-DESTINATION="$(realpath ~/.config/fish)"
+DESTINATION="$(realpath ~/.config)"
 
 info "Setting up fish shell..."
 
@@ -25,14 +25,19 @@ oh-my-fish/bin/install --offline --path=~/.local/share/omf --config=~/.config/om
 substep_info "Installing bobthefish"
 fish -c "omf install bobthefish"
 
+substep_info "Integrating pyenv"
+fish -c "set -Ux PYENV_ROOT $HOME/.pyenv"
+fish -c "fish_add_path $PYENV_ROOT/bin"
+
 info "Downloading iTerm2 integration script"
-curl -L https://iterm2.com/shell_integration/fish -o "$SOURCE/iterm2_shell_integration.fish"
+curl -L https://iterm2.com/shell_integration/fish -o "$SOURCE/fish/iterm2_shell_integration.fish"
 
 substep_info "Creating fish config folders..."
-mkdir -p "$DESTINATION/functions"
-mkdir -p "$DESTINATION/functions/theme-bobthefish"
-mkdir -p "$DESTINATION/completions"
+mkdir -p "$DESTINATION/fish/functions"
+mkdir -p "$DESTINATION/fish/functions/theme-bobthefish"
+mkdir -p "$DESTINATION/fish/completions"
 
+substep_info "Linking fish configs..."
 find . -name "*.fish" -not -path "./oh-my-fish/*" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done

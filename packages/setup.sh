@@ -23,6 +23,11 @@ success "Finished installing Brewfile packages."
 info "Installing Rosetta 2"
 softwareupdate --install-rosetta --agree-to-license
 
+info "Installing Pythons via pyenv"
+#pyenv install 3 # NOTE: We still use the Homebrew python3
+pyenv install 2.7
+pyenv global 2.7
+
 find * -name "*.list" | while read fn; do
     cmd="${fn%.*}"
     set -- $cmd

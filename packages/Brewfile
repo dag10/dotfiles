@@ -37,6 +37,7 @@ brew 'wget'
 brew 'vim'
 brew 'defaultbrowser'
 brew 'fzf'
+brew 'pyenv'
 
 cask 'avibrazil-rdm'
 cask 'arc'
