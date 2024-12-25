@@ -19,6 +19,9 @@ echo "Uninstalling..."
 current_user=$(whoami)
 current_shell=$(dscl . -read /Users/$current_user UserShell | awk '{print $2}')
 
+fish -c "vf uninstall" || "Failed to run 'vf uninstall', perhaps it's not installed?"
+brew uninstall virtualfish || echo "VirtualFish is already uninstalled"
+
 if [ "$current_shell" == "/opt/homebrew/bin/fish" ]; then
   chsh -s /bin/zsh
   echo "Shell changed to /bin/zsh for user $current_user"

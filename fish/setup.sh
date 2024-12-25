@@ -8,6 +8,7 @@ cd "$DIR"
 brew install trash
 brew install fish
 brew install fzf
+brew install virtualfish
 
 . ../scripts/functions.sh
 
@@ -29,6 +30,10 @@ substep_info "Integrating pyenv"
 fish -c "set -Ux PYENV_ROOT $HOME/.pyenv"
 fish -c "fish_add_path $PYENV_ROOT/bin"
 
+substep_info "Installing virtualfish"
+fish -c "vf install"
+fish -c "omf install virtualfish"
+
 info "Downloading iTerm2 integration script"
 curl -L https://iterm2.com/shell_integration/fish -o "$SOURCE/fish/iterm2_shell_integration.fish"
 
@@ -36,6 +41,7 @@ substep_info "Creating fish config folders..."
 mkdir -p "$DESTINATION/fish/functions"
 mkdir -p "$DESTINATION/fish/functions/theme-bobthefish"
 mkdir -p "$DESTINATION/fish/completions"
+mkdir -p "$DESTINATION/omf"
 
 substep_info "Linking fish configs..."
 find . -name "*.fish" -not -path "./oh-my-fish/*" | while read fn; do
