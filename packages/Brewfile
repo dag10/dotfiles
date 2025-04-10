@@ -40,6 +40,7 @@ brew 'fzf'
 brew 'ripgrep-all'
 brew 'pyenv'
 brew 'clipbook'
+brew 'cursor'
 
 cask 'avibrazil-rdm'
 cask 'arc'
