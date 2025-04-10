@@ -39,6 +39,7 @@ brew 'defaultbrowser'
 brew 'fzf'
 brew 'ripgrep-all'
 brew 'pyenv'
+brew 'clipbook'
 
 cask 'avibrazil-rdm'
 cask 'arc'
