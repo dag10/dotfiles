@@ -35,6 +35,7 @@ alias rt "npm run tslint"
 alias rc "npm run gulp css"
 alias rl rc
 alias rtpl "npm run gulp templates"
+alias cl "claude"
 
 # Paths
 fish_add_path /usr/local/bin
