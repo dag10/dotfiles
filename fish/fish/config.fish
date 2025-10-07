@@ -28,6 +28,13 @@ function tmuxa
     tmux -2 attach
   end
 end
+function docker-buildnrun
+  if not set -q argv[1]
+      echo "Format: docker-buildnrun <container-name> [command]" >&2
+      return 1
+  end
+  docker run --rm -it $(docker build --platform linux/amd64 --target $argv[1] -q .) $argv[2]
+end
 
 # Other aliases
 alias rg "npm run gulp"
