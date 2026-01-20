@@ -43,6 +43,7 @@ alias rc "npm run gulp css"
 alias rl rc
 alias rtpl "npm run gulp templates"
 alias cl "claude"
+alias cltmp "cd $(mktemp -d) && pwd && claude"
 
 # Paths
 fish_add_path /usr/local/bin
