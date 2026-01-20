@@ -73,7 +73,7 @@ mas 'Amphetamine', id: 937984704
 mas 'Slack', id: 803453959
 #mas 'Sentry Viewer', id: 1485943859
 mas 'Messenger', id: 1480068668
-mas 'Microsoft Remote Desktop', id: 1295203466
+mas 'Windows App', id: 1295203466
 mas 'Telegram', id: 747648890
 mas 'Save to Raindrop.io', id: 1549370672
 mas '1Blocker', id: 1365531024
