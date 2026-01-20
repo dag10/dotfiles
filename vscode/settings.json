@@ -59,4 +59,28 @@
     "scm.experimental.showHistoryGraph": true,
     "workbench.startupEditor": "none",
     "cmake.configureOnOpen": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "docker.extension.enableComposeLanguageServer": false,
+    "terminal.integrated.stickyScroll.enabled": false,
+    "chat.disableAIFeatures": true,
+    "claudeCode.preferredLocation": "sidebar",
+    "claudeCode.allowDangerouslySkipPermissions": true,
+    "chat.useAgentSkills": true,
+    "sqlite3-editor.ui.movePanelIfSpaceAllows": "bottom",
+    "sqlite3-editor.ui.minimizePanel": true,
 }
