@@ -83,4 +83,8 @@
     "chat.useAgentSkills": true,
     "sqlite3-editor.ui.movePanelIfSpaceAllows": "bottom",
     "sqlite3-editor.ui.minimizePanel": true,
+    "claudeCode.selectedModel": "default",
+    "claudeCode.initialPermissionMode": "acceptEdits",
+    "claudeCode.useCtrlEnterToSend": true,
+    "scm.repositories.selectionMode": "single",
 }

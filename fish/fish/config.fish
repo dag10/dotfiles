@@ -42,8 +42,8 @@ alias rt "npm run tslint"
 alias rc "npm run gulp css"
 alias rl rc
 alias rtpl "npm run gulp templates"
-alias cl "claude"
-alias cltmp "cd $(mktemp -d) && pwd && claude"
+alias cl "claude --allow-dangerously-skip-permissions"
+alias cltmp "cd $(mktemp -d) && pwd && cl"
 
 # Paths
 fish_add_path /usr/local/bin
