@@ -1,5 +1,6 @@
 [push]
 	default = simple
+	autoSetupRemote = true
 [user]
 	name = Drew Gottlieb
 	email = gottlieb.drew@gmail.com
@@ -7,3 +8,5 @@
 	editor = vim
 [url "https://"]
 	insteadOf = git://
+[pull]
+	rebase = true
