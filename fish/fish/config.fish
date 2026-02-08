@@ -44,6 +44,7 @@ alias rl rc
 alias rtpl "npm run gulp templates"
 alias cl "claude --allow-dangerously-skip-permissions"
 alias cltmp "cd $(mktemp -d) && pwd && cl"
+alias tigs "tig status"
 
 # Paths
 fish_add_path /usr/local/bin
