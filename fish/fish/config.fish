@@ -43,6 +43,8 @@ alias rc "npm run gulp css"
 alias rl rc
 alias rtpl "npm run gulp templates"
 alias cl "claude --allow-dangerously-skip-permissions"
+alias cld "cl --dangerously-skip-permissions"
+function clha; cd /Users/drew/Projects/home && cld --model sonnet -p "$argv"; end
 alias cltmp "cd $(mktemp -d) && pwd && cl"
 alias tigs "tig status"
 
